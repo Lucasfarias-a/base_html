@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução ao HTML na prática</title>
+  </head>
+  <body>
+    <h1 id="introducao">Introdução ao HTML na prática</h1>
+    <hr />
+    <h2>Navegue aqui</h2>
+    <ul>
+      <li><a href="#o_que">O que é o HTML?</a></li>
+      <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+      <li><a href="#ex_tags">Exemplo de tags</a></li>
+      <li><a href="#atributos">Atributos das tags</a></li>
+      <li><a href="#listas_o">Listas Ordenadas</a></li>
+      <li><a href="#listas_no">Listas Não Ordenadas</a></li>
+      <li><a href="#link">O que são os Links</a></li>
+    </ul>
+    <hr />
+    <h2 id="o_que">O que é o HTML?</h2>
+    <small><a href="#introducao">(Te levo para cima.)</a></small>
+    <p>
+      Hyper Text Markup é uma <i>linguagem de marcação</i>, utilizada para criar
+      e estruturar o conteúdo de páginas web. Ele define a estrutura e o layout
+      dos elementos presentes na página, como texto, imagens, links e vídeos.
+      Permitindo a criação de páginas interativas e acessíveis.
+    </p>
+    <p>
+      <h2 id="estrutura">Estrutura básica do HTML</h2>
+      <small><a href="#introducao">(Te levo para cima.)</a></small>
+      <p>
+        <p><strong>index.html:</strong>Utilizado para nomear a página principal do site.</p>
+        <p><strong>tag:</strong>Toda tag deve possuir o sinal de menor "<", que irá "abrir ela, e o sinal de maior ">", que irá fechá-la.
+          <ul>
+            <li>
+              Exemplo: "< html>< /html>".
+            </li>
+          </ul>
+        </p>
+      </p>
+    </p>
+    <p>
+      <strong>Head: </strong>A "cabeça" do código. Nele teremos uma seção que contém informações que não serão exibidas diretamente na página, ele é apenas processado pelo navegador. É usado para incluir metadados, como o título da página, links para arquivos CSS, scripts da JavaScript, definição de caracteres etc.
+      <ul>
+        <li>
+          Exemplo: "< link rel="stylesheet" href="estilos.css">".
+        </li>
+      </ul>
+    </p>
+    <p>
+      <strong>Body: </strong>O "corpo" do código. É a seção principal de uma página web onde todo o conteúdo visível para para o usuário é inserido. Na estrutura, podemos ter parágrafos de textos, títulos, listas, tabelas, mídias, formulários etc.
+      <ul>
+        <li>
+          Exemplo¹: "< p>Este é um parágrafo.< /p>".
+        </li>
+        <li>
+          Exemplo²:< img src="imagem.jpg" alt="Imagem de exemplo">
+        </li>
+      </ul>
+    </p>
+    <h2 id="ex_tags">Exemplos de tags</h2>
+    <small><a href="#introducao">(Te levo para cima.)</a></small>
+    <p>
+    <strong>Tags: </strong>São elementos utilizados para marcar e estruturar o conteúdo da página web. Elas são representadas por meio de pares de sinais de menor "<" e maior ">" que envolvem o conteúdo que iremos marcar.
+    <ul>
+      <li>
+        < i>< /i>: <i>Deixa o texto itálico.</i>
+      </li>
+      <li>
+        < strong>< /strong>: <strong>Destaca o texto.</strong>
+      </li>
+      <li>
+        < img src="" alt="">: Exibir uma imagem - < img src="endereço_da_imagem.jpg" alt="Texto alternativo.">
+      </li>
+      <li>
+        < hr>: Insere uma linha entre os conteúdos. Igual temos após a introdução <a href="#introducao">(Hey, Dev.)</a>
+      </li>
+      <li>
+        < h1>< /h1>: Definem o tamanho do texto, possuem níveis do h1 ao h6.
+      </li>
+      <li>
+        < p>< /p>: Basicamente, é o texto dentro de uma parágrafo.
+      </li>
+      <li>
+        < blockquote>< /blockquote>: Utilizado para fazer citações em um texto.
+      </li>
+    </ul>
+    </p>
+    <h2 id="atributos">Atributos das tags</h2>
+    <small><a href="#introducao">(Te levo para cima.)</a></small>
+    <p>
+      <strong>Atributos: </strong> São usados para fornecer informações adicionais sobre uma tag e fornecem instruções para o navegador sobre como processar ou exibir o elemento.
+      <ul>
+        <li>
+          id: Identifica exclusivamente um elemento na página.
+          <ul>Declaração: < h1 id="myHeader">My Header< /h1></ul>
+        </li>
+        <li>
+          class: Define a classe do elementos, permitindo que ele seja estilizado ou manipulado através do CSS ou JS. Diferente do id, ele é usado para agrupar elementos que possuem características semelhantes.
+          <ul>Declaração: < div class="city">< /div></ul>
+        </li>
+        <li>
+          src: Especifica o caminho para a origem de um recurso, como uma imagem ou um script.
+          <ul>Declaração: < img src="url" alt="alternatetext"></ul>
+        </li>
+        <li>
+          href: Contém o destino de um link, seja para página interna ou externa.
+          <ul>Declaração: < a href="https://www.w3schools.com">Visit W3Schools< /a></ul>
+        </li>
+        <li>
+          alt: Fornece um texto alternativo para uma imagem, que é exibido caso ela não seja carregada.
+          <ul>Declaração: < img src="img_chania.jpg" alt="Flowers in Chania"></ul>
+        </li>
+      </ul>
+    </p>
+    <h2 id="listas_o">Listas Ordenadas</h2>
+    <small><a href="#introducao">(Te levo para cima.)</a></small>
+    <p>
+      <strong>Ordered list: </strong> São utilizadas para criar listas com itens numerados ou com marcadores. Definidas pelo elementos < ol> e cada item da lista é marcado com o elemento < li> (listem item).
+    </p>
+    <p>
+      <strong>Declaração: </strong>< ol>< li>< /li>< /ol>
+    </p>
+    <ol>
+      <li>Exemplo¹: Oi, eu sou o primeiro item da lista.</li>
+      <li>Exemplo²: Oi, eu sou o segundo item da lista.</li>
+    </ol>
+    <h2 id="listas_no">Listas Não Ordenadas</h2>
+    <small><a href="#introducao">(Te levo para cima.)</a></small>
+    <p>
+      <strong>Unordered list: </strong> São listas que não possuem uma ordem específica. Elas são definidas pelo elemento < ul>, e também possui o < li> em cada item da lista. Por padrão o marcados é um ponto •.
+    </p>
+    <p>
+      <strong>Declaração: </strong>< ul>< li>< /li>< /ul>
+    </p>
+    <ul>
+      <li>Exemplo¹: Oi, eu sou o primeiro item da lista não ordenada.</li>
+      <li>Exemplo²: Oi, eu sou o segundo item da lista não ordenada.</li>
+    </ul>
+    <h2 id="link">O que são os Links</h2>
+    <small><a href="#introducao">(Te levo para cima.)</a></small>
+    <p>
+      <strong>Links: </strong>Elementos utilizados para criar hiperlinks que permitem a navegação entre diferentes páginas ou recursos na web. Definidos pelo elemento <i>ancor</i> < a> e são usados para criar links para outras páginas, seções da mesma página, arquivos para download, endereços de e-mail etc.
+    <p>
+      <strong>Declaração: </strong>< a href="URL">Texto do link< /a>
+    </p>
+    <ul>
+      <li>Exemplo página externa: < a href="https://www.exemplo.com">Visite o site< /a>.</li>
+      <li>Exemplo seção na mesma página: < a href="#secao1">Ir para a Seção 1< /a>.</li>
+    </ul>
+    <p><strong>target + blank: </strong>O blank é um valor de atributo usado no elemento < a>. Quando o atributo <i>target</i> é definido com <i>blank</i>, ele faz com que o link seja aberto em uma nova guia do navegador.
+      <p><strong>Declaração: </strong>< a href="https://www.exemplo.com" target="_blank">Abrir em nova janela< /a>< /a>
+      </p>
+    </p>
+    <p><strong>title: </strong>O atributo <i>title</i> é usado para adicionar um balão de informações a um link. Quando o usuário passa o mouse sobre o link, o texto no atributo <i>title</i> é exibido em um pequeno balão de infos.
+      <p><strong>Declaração: < a href="#introducao" title="Clicando aqui, você irá para o início da página">(Te levo para cima.)< /a></p>
+        <ul>Exemplo: <a href="#introducao" title="Clicando aqui, você irá para o início da página.">(Estacione a seta aqui.)</a></ul>
+    </p>
+  </body>
+</html>
